@@ -1,0 +1,15 @@
+.header{
+    height: 80px;
+    background-color: #d5f6eb;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+    overflow-x: hidden;
+    background-color: #00d7bb;
+    background: linear-gradient(to right, #17D396, #07F7F7);
+}

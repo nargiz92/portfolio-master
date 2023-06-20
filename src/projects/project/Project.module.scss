@@ -1,0 +1,74 @@
+@import "../../common/style/sass/variables";
+@import "../../common/style/sass/mixins";
+
+.projectBlock {
+  width: 100%;
+  max-width: 400px;
+
+  .img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $secondColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.2;
+    }
+
+
+  }
+
+  .textOfProject {
+    padding: 25px;
+    background-color: $secondColor;
+
+    .projectTitle {
+
+      @include text($titleFontFamily, 18px, 25px, $primaryColor);
+      margin: 0;
+      font-weight: 700;
+      visibility: visible;
+    }
+
+    .description {
+      letter-spacing: 0.4px;
+      flex-wrap: wrap;
+      @include text($titleFontFamily, 13.5px, 23px, $textColor);
+
+      overflow-x: hidden;
+    }
+
+    .button {
+      background: linear-gradient(to right, #02cfb4, #02cfa1);
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 15px 0 5px;
+      padding: 6px 20px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      letter-spacing: 0.4px;
+      line-height: 26px;
+    }
+
+  }
+}
+
+
+

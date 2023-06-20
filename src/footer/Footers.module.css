@@ -1,0 +1,27 @@
+.footersBlock{
+    min-height: 300px;
+    background-color: #22252c;
+    padding: 30px 0;
+
+}
+
+.footersContainer{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.footers{
+    border: 1px solid green;
+    width: 100%;
+    display: flex;
+align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    margin-right: -15px;
+    margin-left: -15px;
+}
