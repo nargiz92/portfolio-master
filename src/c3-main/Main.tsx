@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Main.module.css'
+import s from './Main.module.scss'
 import styleConteiner from './../common/style/Conteiner.module.css'
 import myPhoto from './../assets/image/photo_2022-08-19_16-51-59.jpg'
 
@@ -34,9 +34,10 @@ const Main = () => {
                         </h2>
                     </div>
                     <p>
-                        Hello! I’m Oliver Queen. Web Developer with over 8 years of experience.
+                        Hello! I’m Tagaeva Nargiza. Frontend Developer with over 1 year of experience.
                         Experienced with all stages of the development cycle for dynamic web projects.
-                        Having an in-depth knowledge including advanced HTML5, CSS3, JavaScript, jQuery, Angular JS.
+                        Having an in-depth knowledge including advanced React,Redux,Redux Toolkit,Type Script, JavaScript,React-Router Dom,
+                        StoryBook, Unite test, SASS.
                         Strong background in management and leadership.
                     </p>
                     <ul className={s.profileMenu}>

@@ -4,7 +4,8 @@
 .projectBlock {
   width: 100%;
   max-width: 400px;
-
+  padding-right: 15px;
+  padding-left: 15px;
   .img {
     width: 100%;
     height: 300px;
@@ -32,6 +33,8 @@
   .textOfProject {
     padding: 25px;
     background-color: $secondColor;
+    display: flex;
+    flex-direction: column;
 
     .projectTitle {
 
@@ -45,8 +48,9 @@
       letter-spacing: 0.4px;
       flex-wrap: wrap;
       @include text($titleFontFamily, 13.5px, 23px, $textColor);
-
+      font-weight: 400;
       overflow-x: hidden;
+      line-height: 23px;
     }
 
     .button {
@@ -65,8 +69,18 @@
       cursor: pointer;
       letter-spacing: 0.4px;
       line-height: 26px;
+      width: 125px;
+      height: 38px;
+      text-align: center;
     }
 
+    .button:hover {
+      background: -webkit-gradient(linear, left top, right top, from(#06f6e6), to(#01f3aa));
+      background: linear-gradient(to right, #06f6e6, #01f3aa);
+      -webkit-box-shadow: 0 1px 20px rgba(22, 213, 144, 0.8);
+      box-shadow: 0 1px 20px rgba(22, 213, 144, 0.8);
+      color: #22252c;
+    }
   }
 }
 

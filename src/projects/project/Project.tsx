@@ -14,9 +14,9 @@ const Project = (props: ProjectPropsType) => {
 
             </div>
             <div className={s.textOfProject}>
-                <h3 className={s.projectTitle}>{props.title}</h3>
+                <h4 className={s.projectTitle}>{props.title}</h4>
                 <span className={s.description}>{props.description}</span>
-                <a className={s.button}>View</a>
+                <a className={s.button}>View </a>
             </div>
         </div>
     );

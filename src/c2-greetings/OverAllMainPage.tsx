@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './OverAllMainPage.module.css'
+import s from './OverAllMainPage.module.scss'
 import styleConteiner from './../common/style/Conteiner.module.css'
 import oficeImg from './../assets/image/header-bg.jpg'
 
@@ -9,10 +9,10 @@ const backImage = {
 };
 
 export const OverAllMainPage = () => {
-    //${styleConteiner.container}
+
     return (
-        <div className={`${s.overAllBlock}`} style={backImage}>
-            <div className={styleConteiner.container}>
+        <div className={s.overAllBlock} style={backImage}>
+            <div className={`${styleConteiner.container} ${s.container}`}>
                 <div className={s.text}>
                     <h1>Hello!</h1>
                     <h3>I'm Tagaeva Nargiza</h3>
@@ -24,7 +24,4 @@ export const OverAllMainPage = () => {
         </div>
     );
 };
-
-
-
 

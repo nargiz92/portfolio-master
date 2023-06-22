@@ -3,7 +3,7 @@
     background-color: #22252c;
     padding: 120px 0;
     font-family: 'Open Sans', sans-serif;
-
+    padding-top: 0;
 
 }
 .contactsContainer{
@@ -16,10 +16,7 @@
 
 }
 
-.contactsContainer ::before{
-    display: table;
-    content: ' ';
-}
+
 .contacts{
-width: 100%;
+
 }

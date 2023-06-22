@@ -77,13 +77,18 @@
 
 }
 
+@media screen and (min-width: 992px){
+    .skillsIcon .timeline::after{
+        left: 50%;
+    }
+}
 .skillsIcon .timeline::after {
     background-color: #00d7bb;
     border-radius: 50%;
     bottom: 0;
     content: "";
     height: 20px;
-    left: 50%;
+
     margin-left: -10px;
     position: absolute;
     width: 20px;

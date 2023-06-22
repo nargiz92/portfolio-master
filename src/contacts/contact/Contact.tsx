@@ -9,7 +9,7 @@ const Contact = () => {
                 <form className={s.inputContacts}>
                     <div className={s.row}>
                         <div className={s.nameInput}>
-                            <input className={s.mes}/>
+                            <input className={s.mesInp}/>
                             <p className={s.helpName}></p>
                             <span>Name *</span>
                         </div>
@@ -25,18 +25,22 @@ const Contact = () => {
 
 
                     </div>
-                    <div>
-                        <textarea className={s.mes}/>
-                        <p>
-                        </p>
-                        <span>Message *</span>
-                    </div>
 
-                    <div className={s.colButton}>
-                        <div className={s.messageButton}>
-                            <button type='submit' className={s.button}>send message</button>
+                    <div className={s.messageTextareaAndButton}>
+                        <div  className={s.textareaGroup}>
+                            <textarea className={s.textAreaForm}/>
+                            <p>
+                            </p>
+                            <span>Message *</span>
+                        </div>
+                        <div className={s.colButton}>
+                            <div className={s.messageButton}>
+                                <button type='submit' className={s.button}>send message</button>
+                            </div>
                         </div>
                     </div>
+
+
 
                 </form>
 

@@ -8,7 +8,7 @@
   .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
-    background-color:$bgColor;
+    background-color: $bgColor;
 
     .projects {
       width: 100%;
@@ -19,6 +19,7 @@
       align-items: flex-start;
       @media screen and (max-width: 992px) {
         justify-content: center;
+        margin-bottom: 30px;
       }
     }
   }

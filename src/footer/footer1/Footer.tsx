@@ -10,7 +10,7 @@ const Footer = (props:FooterIconType) => {
         <div className={s.block}>
             <ul className={s.footersIcon}>
                 <li>
-                    <a>
+                    <a href={'#'}>
                         <i className={s.logo} style={props.style}>
 
                         </i>
