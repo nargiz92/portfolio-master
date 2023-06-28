@@ -29,6 +29,7 @@
           background-position: center;
           vertical-align: middle;
           border: 0;
+
         }
 
         &::after {
@@ -42,6 +43,7 @@
           width: 100%;
           z-index: -1;
         }
+
 
       }
 
@@ -74,18 +76,6 @@
           letter-spacing: 0.4px;
           line-height: 26px;
 
-          .cloudDownload {
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: inherit;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-
-            &::before {
-              content: "\f0ed";
-              box-sizing: border-box;
-            }
-          }
         }
 
 
@@ -99,6 +89,7 @@
       box-sizing: border-box;
 
       .title {
+
         > h2 {
           font-size: 45px;
           background: -webkit-linear-gradient(left, #00f298, #07f7f7);
@@ -112,6 +103,10 @@
           line-height: 1.1;
           color: inherit;
         }
+
+        //@media screen and (min-width: 992px){
+        //  margin-top: 85px;
+        //}
       }
 
       & p {
@@ -124,9 +119,9 @@
         font-family: 'Open Sans', sans-serif;
       }
 
-      @media screen and (min-width: 992px) {
-        margin-top: 85px;
-      }
+      //@media screen and (min-width: 992px) {
+      //  margin-top: 85px;
+      //}
 
       .profileMenu {
         margin: 0;

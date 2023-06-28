@@ -1,8 +1,9 @@
 import React from 'react';
-import s from './Skills.module.css';
+import s from './Skills.module.scss';
 import styleConteiner from './../common/style/Conteiner.module.css'
 import Skill from "./skill/Skill";
 import {Title} from "../common/component/title/Title";
+
 
 
 const Skills = () => {
@@ -13,7 +14,7 @@ const Skills = () => {
                 <div className={s.skills}>
                     <div className={s.skillsIcon}>
                         <div className={s.timeline}>
-                            {/*single line skils*/}
+
                             <Skill title={'React'}
                                    description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}/>
                             <Skill title={'Redux'}

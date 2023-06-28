@@ -1,6 +1,6 @@
 import React from 'react';
-import s from './Skill.module.css';
-import skillsIcon from '../Skills.module.css'
+import s from './Skill.module.scss';
+import skillsIcon from 'src/skills/Skills.module.scss'
 
 type SkillPropsType = {
     title: string,
@@ -8,12 +8,12 @@ type SkillPropsType = {
 }
 const Skill = (props: SkillPropsType) => {
     return (
-        <div className={` ${s.timelineBlock}`}>
+        <div className={s.timelineBlock}>
             <div className={s.timelineBlockImg}>
                 <span className={s.dot}></span>
             </div>
             <div className={s.timelineContent}>
-                <div className={s.headingWowForFadeInLeft }>
+                <div className={s.headingWowForFadeInLeft}>
                     <h2>
                         {props.title}
                     </h2>

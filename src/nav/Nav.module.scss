@@ -1,7 +1,6 @@
 
 
 .nav {
-    border: 1px solid red;
     display: flex;
     width: 400px;
     justify-content: space-between;
@@ -10,6 +9,10 @@
         color: white;
         text-transform: uppercase;
         font-family: inherit;
+        &:hover{
+            color: #22252c;
+        }
     }
+
 }
 

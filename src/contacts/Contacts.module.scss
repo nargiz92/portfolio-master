@@ -1,0 +1,28 @@
+.contactsBlock {
+  min-height: 400px;
+  background-color: #22252c;
+  padding: 120px 0;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 0;
+
+  .contactsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .contacts {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+
+

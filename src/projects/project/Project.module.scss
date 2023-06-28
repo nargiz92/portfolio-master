@@ -37,8 +37,7 @@
     flex-direction: column;
 
     .projectTitle {
-
-      @include text($titleFontFamily, 18px, 25px, $primaryColor);
+      @include text($titleFontFamily, 18px, 25px,$primaryColor);
       margin: 0;
       font-weight: 700;
       visibility: visible;

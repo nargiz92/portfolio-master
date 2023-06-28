@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Contact.module.css';
+import s from './Contact.module.scss';
 
 
 const Contact = () => {
@@ -18,18 +18,11 @@ const Contact = () => {
                             <p className={s.helpName}></p>
                             <span>Email *</span>
                         </div>
-
-
                     </div>
-                    <div>
-
-
-                    </div>
-
                     <div className={s.messageTextareaAndButton}>
                         <div  className={s.textareaGroup}>
                             <textarea className={s.textAreaForm}/>
-                            <p>
+                            <p className={s.helpName}>
                             </p>
                             <span>Message *</span>
                         </div>

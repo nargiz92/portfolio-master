@@ -21,8 +21,6 @@ const Main = () => {
 
                     <div className={s.resumeButton}>
                         <a href={'#'}>
-                            <i className={s.cloudDownload}>
-                            </i>
                             Download Resume
                         </a>
                     </div>
