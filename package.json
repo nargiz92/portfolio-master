@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nargiz92.github.io/portfolio",
+  "homepage": "https://nargiz92.github.io/portfolio-master",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,7 +11,6 @@
     "@types/node": "^16.18.12",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "@types/react-fontawesome": "^1.6.5",
     "gh-pages": "^5.0.0",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",

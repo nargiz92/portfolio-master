@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./Projects.module.scss";
-import styleConteiner from "../common/style/Conteiner.module.css";
+import styleConteiner from "../common/style/Conteiner.module.scss";
 import Project from "./project/Project";
 import {Title} from "../common/component/title/Title";
 import todoIcon from "../assets/image/todoIcon.jpeg"

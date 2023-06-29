@@ -8,6 +8,7 @@ import Projects from "./projects/Projects";
 import Contacts from "./contacts/Contacts";
 import Footers from "./footer/Footers";
 import {OverAllMainPage} from "./c2-greetings/OverAllMainPage";
+import Mains from "./main/Mains";
 
 function App() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './OverAllMainPage.module.scss'
-import styleConteiner from './../common/style/Conteiner.module.css'
+import styleConteiner from '../common/style/Conteiner.module.scss'
 import oficeImg from './../assets/image/header-bg.jpg'
 
 const backImage = {

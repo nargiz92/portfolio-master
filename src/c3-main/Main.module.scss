@@ -6,91 +6,83 @@
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
-    .myMainPhotoAndButton {
-      margin-top: 54px;
+    .content {
       display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 70px;
 
-      > .myImgBlock {
-        height: 385px;
-        position: relative;
-        min-width: 365px;
-        z-index: 1;
-
-        .myImg {
-          height: 100%;
-          width: 100%;
-          color: blue;
-          background-image: url('../assets/image/photo_2022-08-19_16-51-39.jpg');
-          background-size: cover;
-          background-position: center;
-          vertical-align: middle;
-          border: 0;
-
-        }
-
-        &::after {
-          display: block;
-          border: 7px solid #00d7bb;
-          content: "";
-          height: 100%;
-          left: 50px;
-          position: absolute;
-          top: -45px;
-          width: 100%;
-          z-index: -1;
-        }
-
-
-      }
-
-      .resumeButton {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        letter-spacing: 0.4px;
-        line-height: 26px;
-        /*overflow-x: hidden;*/
+      .myMainPhotoAndButton {
+        margin-top: 54px;
+        display: flex;
+        flex-direction: column;
         box-sizing: border-box;
+        flex-grow: 1;
+        max-width: 400px;
 
-        > a {
-          margin-left: 90px;
-          background: -webkit-gradient(linear, left top, right top, from(#17d396), to(#07f7f7));
+        .myImgWrapper {
+          position: relative;
+          .myImg {
+            height: 385px;
+            width: 100%;
+            max-width: 368px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+            min-width: 300px;
+          }
+
+          &::before {
+            content: "";
+            display: block;
+            border: 7px solid #00d7bb;
+            height: 100%;
+            left: 50px;
+            position: absolute;
+            top: -45px;
+            width: 100%;
+            z-index: 0;
+            @media (max-width: 576px) {
+              left: 22px;
+            }
+
+          }
+
+        }
+
+        .resumeButton {
           background: linear-gradient(to right, #17d396, #07f7f7);
-          -webkit-box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
           box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
           color: #fff;
           display: inline-block;
           font-size: 14px;
           font-weight: 700;
-          margin-top: 30px;
-          padding: 14px 22px;
           text-align: center;
           text-decoration: none;
-          box-sizing: border-box;
           cursor: pointer;
           font-family: 'Open Sans', sans-serif;
           letter-spacing: 0.4px;
           line-height: 26px;
-
+          margin: 30px 0;
+          padding: 14px 22px;
+          align-self: center;
         }
-
 
       }
 
-    }
-
-    .aboutMe {
-      width: 50%;
-      float: left;
-      box-sizing: border-box;
-
-      .title {
-
-        > h2 {
+      .aboutMe {
+        flex-grow: 1;
+        max-width: 350px;
+        width: 100%;
+        @media (max-width: 978px) {
+          width: 100%;
+          max-width: max-content;
+        }
+        .title {
           font-size: 45px;
           background: -webkit-linear-gradient(left, #00f298, #07f7f7);
           -webkit-background-clip: text;
@@ -102,59 +94,57 @@
           font-family: 'Open Sans', sans-serif;
           line-height: 1.1;
           color: inherit;
+
+
         }
 
-        //@media screen and (min-width: 992px){
+        p {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 26px;
+          margin: 20px 0;
+          flex-wrap: wrap;
+          font-family: 'Open Sans', sans-serif;
+
+        }
+
+        //@media screen and (min-width: 992px) {
         //  margin-top: 85px;
         //}
-      }
 
-      & p {
-        color: #fff;
-        font-size: 14.5px;
-        font-weight: 300;
-        line-height: 26px;
-        margin: 20px 60px 20px 0;
-        flex-wrap: wrap;
-        font-family: 'Open Sans', sans-serif;
-      }
-
-      //@media screen and (min-width: 992px) {
-      //  margin-top: 85px;
-      //}
-
-      .profileMenu {
-        margin: 0;
-        padding: 0;
-        display: block;
-        list-style-type: disc;
-        font-family: 'Open Sans', sans-serif;
-
-        > li {
-          color: #fff;
-          font-size: 17.5px;
-          margin-bottom: 16px;
-          list-style: none;
-          display: list-item;
-          text-align: -webkit-match-parent;
+        .profileMenu {
+          margin: 0;
+          padding: 0;
+          display: block;
+          list-style-type: disc;
           font-family: 'Open Sans', sans-serif;
-          font-weight: 400;
-          letter-spacing: 0.4px;
 
-          > span {
-            color: #00d7bb;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 17.5px;
+          > li {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 16px;
+            list-style: none;
+            display: list-item;
+            text-align: -webkit-match-parent;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
             letter-spacing: 0.4px;
-            line-height: 26px;
+
+            > span {
+              color: #00d7bb;
+              font-weight: 700;
+              text-transform: uppercase;
+              font-size: 18px;
+              letter-spacing: inherit;
+              line-height: 26px;
+            }
           }
+
         }
 
       }
-
     }
-
   }
 }
 

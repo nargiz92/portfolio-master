@@ -7,12 +7,14 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width: 992px) {
-    width: 100%;
-  }
+  width: 100%;
+
+
+
 
   .contactForms {
     width: 100%;
+
     .inputContacts {
       margin-top: 0em;
 
@@ -21,6 +23,7 @@
         margin-bottom: 0;
         margin-top: 5px;
       }
+
       .nameInput span, .emailInput span, .textareaGroup span {
         color: #8491a2;
         font-size: 14px;
@@ -36,7 +39,7 @@
         transition: 0.4s;
       }
 
-      input, textarea{
+      input, textarea {
         background-color: transparent;
         border: none;
         border-bottom: 2px solid #58616d;
@@ -53,22 +56,24 @@
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
       }
-      input, textarea{
+
+      input, textarea {
         border-bottom: 2px solid #58616d;
 
       }
 
-     input:focus, textarea:focus {
+      input:focus, textarea:focus {
         border-bottom-color: #02cfb4;
         outline: none;
         box-shadow: none;
       }
 
-      input:focus ~ span{
-        color:#02cfb4;
+      input:focus ~ span {
+        color: #02cfb4;
       }
-      textarea:focus ~ span{
-        color:#02cfb4;
+
+      textarea:focus ~ span {
+        color: #02cfb4;
       }
 
       .row {
@@ -86,29 +91,38 @@
           width: 100%;
         }
 
+        @media (max-width: 768px) {
+          flex-direction: column;
+          width: 100%;
+        }
       }
 
       .messageTextareaAndButton {
         margin-right: -15px;
         margin-left: -15px;
+
         .textareaGroup {
           position: relative;
           min-height: 1px;
           padding-right: 15px;
           padding-left: 15px;
           margin-bottom: 15px;
+
           .textAreaForm {
             height: 235px;
             overflow: auto;
 
           }
-          >span {
+
+          > span {
             top: 5px;
           }
 
         }
+
         .colButton {
           width: 100%;
+
           .messageButton {
             display: flex;
             align-items: end;
@@ -136,7 +150,8 @@
               -webkit-appearance: button;
               cursor: pointer;
               overflow: visible;
-             &:hover {
+
+              &:hover {
                 background-color: #17d397;
                 font-weight: 600;
                 color: #22252c;
@@ -151,10 +166,13 @@
         }
 
       }
-
+@media (max-width: 768px) {
+  width: 100%;
+}
     }
   }
 }
+
 //for animation
 .nameInput .nameInput_small span,
 .emailInput .emailInput_small span,
@@ -163,7 +181,6 @@
   font-size: 11px;
   top: -3px;
 }
-
 
 
 //.nameInput, .emailInput{
