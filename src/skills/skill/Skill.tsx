@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skill.module.scss';
-import skillsIcon from 'src/skills/Skills.module.scss'
+
 
 type SkillPropsType = {
     title: string,
