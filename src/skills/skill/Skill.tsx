@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Skill.module.scss';
+import {Fade, Slide} from "react-awesome-reveal";
 
 
 type SkillPropsType = {
@@ -13,17 +14,24 @@ const Skill = (props: SkillPropsType) => {
                 <span className={s.dot}></span>
             </div>
             <div className={s.timelineContent}>
-                <div className={s.headingWowForFadeInLeft}>
-                    <h2>
-                        {props.title}
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                </div>
-                <span className={s.descriptionWowForFadeInLeft}>
+                <Slide direction={'left'}>
+                    <div className={s.headingWowForFadeInLeft}>
+                        <h2>
+                            {props.title}
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </p>
+                    </div>
+
+                </Slide>
+             <Slide direction={'right'}>
+                 <span className={s.descriptionWowForFadeInLeft}>
                    {props.description}
-                                     </span>
+                    </span>
+             </Slide>
+
+
 
             </div>
         </div>

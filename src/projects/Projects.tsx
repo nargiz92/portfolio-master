@@ -25,6 +25,7 @@ const Projects = () => {
                 <Title text={'Projects'}/>
 
                 <div className={s.projects}>
+
                     <Project style={todolist} title={'Todolist'} description={'Lorem gughgjhgh hjhgjghjghg hghjgh'}/>
                     <Project style={social} title={'Social network'} description={'hjghgfg gfghfhgfjhg hgjhgjh xsdsdffdghhv '}/>
                     <Project style={fridayProject} title={'Counter'} description={'hjghgfg gfghfhgfjhg hgjhgjh xsdsdffdghhv '}/>

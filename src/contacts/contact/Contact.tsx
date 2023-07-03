@@ -10,20 +10,20 @@ const Contact = () => {
                     <div className={s.row}>
                         <div className={s.nameInput}>
                             <input className={s.mesInp}/>
-                            <p className={s.helpName}></p>
+                            <div className={s.helpName}></div>
                             <span>Name *</span>
                         </div>
                         <div className={s.emailInput}>
                             <input className={s.email}/>
-                            <p className={s.helpName}></p>
+                            <div className={s.helpName}></div>
                             <span>Email *</span>
                         </div>
                     </div>
                     <div className={s.messageTextareaAndButton}>
                         <div  className={s.textareaGroup}>
                             <textarea className={s.textAreaForm}/>
-                            <p className={s.helpName}>
-                            </p>
+                            <div className={s.helpName}>
+                            </div>
                             <span>Message *</span>
                         </div>
                         <div className={s.colButton}>
