@@ -15,7 +15,7 @@ export const OverAllMainPage = () => {
     return (
         <div className={s.overAllBlock} style={backImage}>
             <div className={`${styleConteiner.container} ${s.container}`}>
-                <Fade direction={"up"}>
+                <Fade direction={"up"} delay={200} duration={3000} >
 
                     <div className={s.text}>
                         <h1>Hello!</h1>

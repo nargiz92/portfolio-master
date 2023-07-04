@@ -14,7 +14,7 @@ const Skill = (props: SkillPropsType) => {
                 <span className={s.dot}></span>
             </div>
             <div className={s.timelineContent}>
-                <Slide direction={'left'}>
+                <Slide triggerOnce={true} direction={'left'} duration={2000} delay={100}>
                     <div className={s.headingWowForFadeInLeft}>
                         <h2>
                             {props.title}
@@ -25,7 +25,7 @@ const Skill = (props: SkillPropsType) => {
                     </div>
 
                 </Slide>
-             <Slide direction={'right'}>
+             <Slide triggerOnce={true} direction={'right'} duration={2000} delay={100}>
                  <span className={s.descriptionWowForFadeInLeft}>
                    {props.description}
                     </span>

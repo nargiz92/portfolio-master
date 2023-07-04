@@ -6,7 +6,7 @@ import {Title} from "../common/component/title/Title";
 
 const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
+        <div id='contacts' className={s.contactsBlock}>
             <div className={`${styleConteiner.container} ${s.contactsContainer}`}>
                 <Title text={'Contact me'}/>
                 <div className={s.contacts}>

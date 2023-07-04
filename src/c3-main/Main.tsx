@@ -25,11 +25,11 @@ const myImage = {
 const Main = () => {
 
     return (
-        <div className={s.mainBlock}>
+        <div id='main' className={s.mainBlock}>
             <Particles className={s.particles} options={particlesOpt}/>
             <div className={`${styleConteiner.container} ${s.container}`}>
                 <div className={s.content}>
-                    <Slide direction={'left'}>
+                    <Slide direction={'left'} duration={2000}>
                     <div className={s.myMainPhotoAndButton}>
                         <Tilt options={{max:25}}>
                             <div className={s.myImgWrapper}>
@@ -45,7 +45,7 @@ const Main = () => {
 
                     </div>
                 </Slide>
-                    <Slide direction={'right'}>
+                    <Slide direction={'right'} duration={2000}>
                         <div className={s.aboutMe}>
 
                             <h2 className={s.title}>

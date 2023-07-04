@@ -1,18 +1,92 @@
 
-
 .nav {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  .burgerNavItems {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
     display: flex;
-    width: 400px;
+    flex-direction: column;
     justify-content: space-between;
-    >a{
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        font-family: inherit;
-        &:hover{
-            color: #22252c;
-        }
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #00d7bb;
+    background: linear-gradient(to right, #17D396, #07F7F7);
+    height: 0;
+    padding: 20px;
+    transform: translate(0, -150px);
+    transition: 0.7s;
+
+    > a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:hover {
+        color: #22252c;
+      }
     }
 
+    .active {
+      color: #22252c;
+    }
+  }
+
+  .show {
+    transform: translate(0, 0);
+    height: 150px;
+  }
+
+  .burgerBtn {
+
+    position: absolute;
+    cursor: pointer;
+    float: right;
+    margin-top: -4px;
+    text-align: right;
+    width: 30px;
+
+    > span {
+      background-color: #fff;
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      width: 25px;
+
+      &::before {
+        background-color: #fff;
+        content: "";
+        height: 2px;
+        margin: 2px 0;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 30px;
+      }
+
+      &::after {
+        background-color: #fff;
+        bottom: 5px;
+        content: "";
+        height: 2px;
+        margin: 2px 0;
+        position: absolute;
+        right: 0;
+        width: 30px;
+      }
+    }
+  }
+
+  //@media (min-width: 400px) {
+  //  display: none;
+  //}
 }
 
