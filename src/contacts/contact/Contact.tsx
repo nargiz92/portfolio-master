@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './Contact.module.scss';
 
 
 const Contact = () => {
+    const [isFul, setIsFul]=useState()
     return (
         <div className={s.colMd}>
             <div className={s.contactForms}>
