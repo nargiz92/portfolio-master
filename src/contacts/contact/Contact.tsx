@@ -9,7 +9,8 @@ const Contact = () => {
                 <form className={s.inputContacts}>
                     <div className={s.row}>
                         <div className={s.nameInput}>
-                            <input className={s.mesInp}/>
+                            <input className={`${s.mesInp}`}/>
+                            {/*<input className={`${s.mesInp} ${value?s.isFull:''}`}/>*/}
                             <div className={s.helpName}></div>
                             <span>Name *</span>
                         </div>

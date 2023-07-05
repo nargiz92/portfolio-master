@@ -13,7 +13,7 @@ const backImage = {
 export const OverAllMainPage = () => {
 
     return (
-        <div className={s.overAllBlock} style={backImage}>
+        <div id='home' className={s.overAllBlock} style={backImage}>
             <div className={`${styleConteiner.container} ${s.container}`}>
                 <Fade direction={"up"} delay={200} duration={3000} >
 

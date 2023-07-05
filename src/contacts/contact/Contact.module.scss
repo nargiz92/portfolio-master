@@ -64,13 +64,17 @@
         outline: none;
         box-shadow: none;
       }
-
+      input.isFull ~ span,
       input:focus ~ span {
         color: #02cfb4;
+        font-size: 11px;
+        top: -3px;
       }
 
       textarea:focus ~ span {
         color: #02cfb4;
+        font-size: 11px;
+        top: -5px;
       }
 
       .row {

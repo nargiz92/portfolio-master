@@ -10,6 +10,16 @@ const Nav = () => {
     return (
         <div className={s.nav}>
             <div className={menuIsOpen?`${s.burgerNavItems} ${s.show}`:s.burgerNavItems}>
+                <Link
+                    activeClass={s.active}
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={1}
+                    duration={500}
+                >
+                   Home
+                </Link>
             <Link
                 activeClass={s.active}
                 to='main'
@@ -18,7 +28,7 @@ const Nav = () => {
                 offset={1}
                 duration={500}
             >
-                Home
+                About
             </Link>
             <Link
                 activeClass={s.active}
