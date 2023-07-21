@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import s from './Contact.module.scss';
-import axios from "axios";
 
-interface FormDataType {
+import {sendMessage} from "../../api/contact-api";
+
+export interface FormDataType {
     name: string,
     contact: string,
     message: string
@@ -10,11 +11,6 @@ interface FormDataType {
 
 
 
-const api = {
-    login() {
-
-    }
-}
 const Contact = () => {
     const formData: FormDataType = {name: "", contact: "", message: ""}
 
@@ -28,15 +24,10 @@ const Contact = () => {
     const onSubmitHandler = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
 
-           axios.post('https://gmail-smtp-sigma.vercel.app/sendMessage', {
-               name: responseBody.name,
-               contact: responseBody.contact,
-               message: responseBody.message
-           }).then(() => {
-               alert('success')
-           })
-
-
+        sendMessage(responseBody)
+            .then(() => {
+                alert('success')
+            })
     }
 
     return (
@@ -45,14 +36,15 @@ const Contact = () => {
                 <form className={s.inputContacts} id={'contact-form'} onSubmit={onSubmitHandler}>
                     <div className={s.row}>
                         <div className={s.nameInput}>
-                            <input className={`${s.mesInp}  ${responseBody.name.length?s.isFull:''}`} name={'name'} onChange={(e) => inputChangeHandler(e)}
+                            <input className={`${s.mesInp}  ${responseBody.name.length ? s.isFull : ''}`} name={'name'}
+                                   onChange={(e) => inputChangeHandler(e)}
                                    type="text"/>
-                            {/*<input className={`${s.mesInp} ${value?s.isFull:''}`}/>*/}
                             <div className={s.helpName}></div>
-                            <span className={`${responseBody?s.isFul:s.orderSpan}`}>Name *</span>
+                            <span className={`${responseBody ? s.isFul : s.orderSpan}`}>Name *</span>
                         </div>
                         <div className={s.emailInput}>
-                            <input className={`&{s.email}  ${responseBody.contact.length?s.isFull:''}`} name={'contact'} onChange={(e) => inputChangeHandler(e)}
+                            <input className={`&{s.email}  ${responseBody.contact.length ? s.isFull : ''}`}
+                                   name={'contact'} onChange={(e) => inputChangeHandler(e)}
                                    type="text"/>
                             <div className={s.helpName}></div>
                             <span>Email *</span>
@@ -60,8 +52,10 @@ const Contact = () => {
                     </div>
                     <div className={s.messageTextareaAndButton}>
                         <div className={s.textareaGroup}>
-                            <textarea className={`${s.textAreaForm}  ${responseBody.message.length?s.isHaveValue:''}`} name={'message'}
-                                      onChange={(e) => inputChangeHandler(e)}/>
+                            <textarea
+                                className={`${s.textAreaForm}  ${responseBody.message.length ? s.isHaveValue : ''}`}
+                                name={'message'}
+                                onChange={(e) => inputChangeHandler(e)}/>
                             <div className={s.helpName}>
                             </div>
                             <span>Message *</span>
