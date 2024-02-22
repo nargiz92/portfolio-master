@@ -5,6 +5,7 @@ type ProjectPropsType = {
     style: any
     title:string
     description:string
+    view:string
 }
 const Project = (props: ProjectPropsType) => {
     return (
@@ -16,7 +17,7 @@ const Project = (props: ProjectPropsType) => {
             <div className={s.textOfProject}>
                 <h4 className={s.projectTitle}>{props.title}</h4>
                 <span className={s.description}>{props.description}</span>
-                <a className={s.button}>View </a>
+                <a className={s.button} href={props.view}>View </a>
             </div>
         </div>
     );

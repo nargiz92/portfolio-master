@@ -12,6 +12,7 @@ const backImage = {
 
 export const OverAllMainPage = () => {
 
+
     return (
         <div id='home' className={s.overAllBlock} style={backImage}>
             <div className={`${styleConteiner.container} ${s.container}`}>

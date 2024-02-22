@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './Skill.module.scss';
-import {Fade, Slide} from "react-awesome-reveal";
+import { Slide} from "react-awesome-reveal";
 
 
 type SkillPropsType = {
     title: string,
     description: string
+    titleDescription: string
 }
 const Skill = (props: SkillPropsType) => {
     return (
@@ -20,7 +21,7 @@ const Skill = (props: SkillPropsType) => {
                             {props.title}
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                            {props.titleDescription}
                         </p>
                     </div>
 

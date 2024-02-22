@@ -3,8 +3,7 @@ import s from './Main.module.scss'
 import styleConteiner from "../common/style/Conteiner.module.scss";
 import { Tilt } from 'react-tilt'
 import myImg from '../assets/image/photo_2022-08-19_16-51-39.jpg'
-import {Fade, Slide} from "react-awesome-reveal";
-import {inspect} from "util";
+import { Slide} from "react-awesome-reveal";
 import Particles from "react-tsparticles";
 
 const particlesOpt={
@@ -53,7 +52,7 @@ const Main = () => {
                             </h2>
 
                             <p>
-                                Hello! I’m Tagaeva Nargiza. Frontend Developer with over 1 year of experience.
+                                Hello! I’m Tagaeva Nargiza. Frontend Developer with over 2+ year of experience.
                                 Experienced with all stages of the development cycle for dynamic web projects.
                                 Having an in-depth knowledge including advanced React,Redux,Redux Toolkit,Type Script, JavaScript,React-Router Dom,
                                 StoryBook, Unite test, SASS.
@@ -76,12 +75,12 @@ const Main = () => {
                                 </li>
                                 <li>
                             <span>
-                                ADDRESS: </span>
-                                    Russia, Moscow, Batyninskay 10, apr.110
+                                Location: </span>
+                                    Russia, Moscow.
                                 </li>
                                 <li>
                                     <span>PHONE: </span>
-                                    +79106364032
+                                    +79804234944
                                 </li>
                                 <li>
                             <span>

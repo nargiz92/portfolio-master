@@ -5,12 +5,15 @@
   width: 100%;
   box-sizing: border-box;
  justify-content: center;
- >svg{
-   width: 45px;
-   margin: 0 15px !important;
-  >:hover{
-    fill:#02cfb4 ;
+  >a{
+    >svg{
+      width: 45px;
+      margin: 0 15px !important;
+      >:hover{
+        fill:#02cfb4 ;
+      }
   }
+
 }
 
   .logo {

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import s from './Nav.module.scss'
-import {Link, animateScroll as scroll} from "react-scroll"
+import {Link} from "react-scroll"
 
 const Nav = () => {
     const[menuIsOpen, setBergerMenu]=useState(false)
