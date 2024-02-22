@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio-master/static/css/main.83a86903.css",
-    "main.js": "/portfolio-master/static/js/main.cea4bc38.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio-master/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/portfolio-master/static/css/main.c2c0458a.css",
+    "main.js": "/portfolio-master/static/js/main.10e1326f.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio-master/static/js/453.1407b060.chunk.js",
+    "static/media/Flash-Cards.jpg": "/portfolio-master/static/media/Flash-Cards.a9ac7b07cc8595a9b065.jpg",
     "static/media/photo_2022-08-19_16-51-39.jpg": "/portfolio-master/static/media/photo_2022-08-19_16-51-39.f7c3f5144e3db8eab751.jpg",
     "static/media/linkedin-svgrepo-com.svg": "/portfolio-master/static/media/linkedin-svgrepo-com.c5d0894bb0be4d2cf7187732cad2eff4.svg",
     "static/media/socialNetwork.jpeg": "/portfolio-master/static/media/socialNetwork.8999c89ce44e3584e35f.jpeg",
     "static/media/header-bg.jpg": "/portfolio-master/static/media/header-bg.96a8fb898f7c761e9a4b.jpg",
-    "static/media/todoIcon.jpeg": "/portfolio-master/static/media/todoIcon.f3d5d4b72a826fda3d70.jpeg",
     "static/media/crm.jpeg": "/portfolio-master/static/media/crm.a92dbc30e2c199282274.jpeg",
     "index.html": "/portfolio-master/index.html",
-    "main.83a86903.css.map": "/portfolio-master/static/css/main.83a86903.css.map",
-    "main.cea4bc38.js.map": "/portfolio-master/static/js/main.cea4bc38.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio-master/static/js/787.1ed0c42c.chunk.js.map"
+    "main.c2c0458a.css.map": "/portfolio-master/static/css/main.c2c0458a.css.map",
+    "main.10e1326f.js.map": "/portfolio-master/static/js/main.10e1326f.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio-master/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83a86903.css",
-    "static/js/main.cea4bc38.js"
+    "static/css/main.c2c0458a.css",
+    "static/js/main.10e1326f.js"
   ]
 }
