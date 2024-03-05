@@ -37,7 +37,7 @@ const Main = () => {
 
 
 
-                        <a className={s.resumeButton} href={'/CvTagaeva.pdf'} download={'cvMy'} target={'_blank'} rel={'noreferrer'}>
+                        <a className={s.resumeButton} href={'https://nargiz92.github.io/portfolio-master/CvTagaeva.pdf'} download={'cvMy'} target={'_blank'} rel={'noreferrer'}>
                             Download Resume
                         </a>
 
