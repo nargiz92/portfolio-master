@@ -5,7 +5,6 @@ import { Tilt } from 'react-tilt'
 import myImg from '../assets/image/photo_2022-08-19_16-51-39.jpg'
 import { Slide} from "react-awesome-reveal";
 import Particles from "react-tsparticles";
-
 const particlesOpt={
     "particles":{
         "number":{
@@ -38,7 +37,7 @@ const Main = () => {
 
 
 
-                        <a className={s.resumeButton} href={'#'}>
+                        <a className={s.resumeButton} href={'/CvTagaeva.pdf'} download={'cvMy'} target={'_blank'} rel={'noreferrer'}>
                             Download Resume
                         </a>
 
